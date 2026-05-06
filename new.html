@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo-app">
+        <div class="title">Todo App</div>
+
+        <div class="todo-from">
+            <input class="todo-input" type="text" placeholder="add a something to do" />
+            <div class="todo-button">add to do</div>
+        </div>
+
+        <div class="item completed">
+            <div>
+                <input type="checkbox" />
+                <span class="name">起床</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+
+        <div class="item">
+            <div>
+                <input type="checkbox" />
+                <span class="name">吃饭</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+
+        <div class="item">
+            <div>
+                <input type="checkbox" />
+                <span class="name">上班</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+
+         <div class="item">
+            <div>
+                <input type="checkbox" />
+                <span class="name">工作</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+
+         <div class="item">
+            <div>
+                <input type="checkbox" />
+                <span class="name">下班</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+
+         <div class="item">
+            <div>
+                <input type="checkbox" />
+                <span class="name">健身</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+
+         <div class="item">
+            <div>
+                <input type="checkbox" />
+                <span class="name">睡觉</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+    </div>
+    <style>
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+        .del {
+            color: red;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 80%;
+            height: 50px;
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: rgba(149,157,165,0.2) 0px 8px 20px;
+        }
+        .todo-button {
+            width: 100px;
+            height: 54px;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(
+                to right,
+                rgb(113,65,168),
+                rgba(44,114,151,1)
+            );
+            user-select: none;
+            color:#ffff; 
+        }
+        .todo-input {
+            margin-bottom: 20px ;
+            padding-left: 15px;
+            border: 1px solid #dfe1ef;
+            outline: none ;
+            width :60% ;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+        }
+        .todo-from {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+        body {
+            background: linear-gradient(
+                to right,
+                rgb(113,65,168),
+                rgba(44,114,151,1)
+            );
+        }
+        .todo-app {
+            width :98%;
+            height: 800px;
+            padding-top: 30px;
+            box-sizing: border-box;
+            background-color:#ffff ;
+            border-radius: 20px;
+            margin-top: 40px;
+            margin-right: 1%;
+            margin-right: 1%;
+        }
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</body>
+</html>  
